@@ -74,9 +74,8 @@ class FrontEnd(QWidget):
 
     def api_handler(self, input_city):
         """Function to call API to get results"""
-        
-        BASE_URL = "http://api.openweathermap.org/data/2.5/weather"
 
+        BASE_URL = "http://api.openweathermap.org/data/2.5/weather"
         request_url = f"{BASE_URL}?appid={API_KEY}&q={input_city}"
         response = requests.get(request_url)
 
